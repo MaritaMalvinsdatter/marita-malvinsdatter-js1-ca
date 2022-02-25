@@ -8,26 +8,24 @@
     <title>Contact</title>
 </head>
 <body>
-    <form method="POST">
-        <div class="form-wrapper">
+    <form>
+        <div class="contact-form">
             <section>
                 <label for="fullname">Full Name (required)</label>
-                <input type="text" name="fullname" id="name">
-                <div class="error" id="fullNameError">Please enter your full name</div>
+                <input type="text" name="fullname" id="fullname">
+                <div class="error" id="full-name-error">Please enter your full name</div>
                 <label for="address">Address (minimum 25 characters)</label>
-                <textarea name="address" id="address" style="height:100px"></textarea>
-                <div class="error" id="addressError">Please enter your address with a minimum of 25 characters</div>
+                <textarea name="address" id="address" style="height:70px"></textarea>
+                <div class="error" id="address-error">Please enter your address with a minimum of 25 characters</div>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
-                <div class="error" id="emailError">Please enter a valid email address</div>
+                <div class="error" id="email-error">Please enter a valid email address</div>
                 <label for="subject">Subject (minimum 10 characters)</label>
                 <input type="text" name="subject" id="subject">
-                <div class="error" id="subjectError">Please enter a subject with a minimum of 10 characters</div>
+                <div class="error" id="subject-error">Please enter a subject with a minimum of 10 characters</div>
             </section>
         </div>
-        <div class="button">
-            <input type="submit" class="cta" value="Send">
-        </div>
+        <button>submit</button>
     </form>
     <script src="/js/contact.js"></script>
 </body>
