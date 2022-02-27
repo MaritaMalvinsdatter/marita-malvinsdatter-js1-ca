@@ -14,7 +14,7 @@ const subjectError = document.querySelector("#subject-error");
 
 const message = document.querySelector(".validation-message")
 
-function validateForm() {
+function validateForm(event) {
     event.preventDefault();
 
     if (checkLength(fullName.value, 0)) {
