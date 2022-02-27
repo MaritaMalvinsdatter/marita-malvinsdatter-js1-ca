@@ -18,6 +18,7 @@ a {
 
 .restaurant-link {
   text-decoration: underline;
+  color: blue;
 }
 
 span {
@@ -49,6 +50,12 @@ button {
 }
 
 /* Contact Form */
+
+.validation-message {
+  background-color: green;
+  font-size: 1.2em;
+  max-width: 600px;
+}
 
 input,
 select,
