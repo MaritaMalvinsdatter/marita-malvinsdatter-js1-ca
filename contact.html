@@ -8,7 +8,7 @@
     <title>Contact</title>
 </head>
 <body>
-    <form>
+    <form id="contact-form">
         <div class="contact-form">
             <section>
                 <label for="fullname">Full Name (required)</label>
@@ -18,14 +18,15 @@
                 <textarea name="address" id="address" style="height:70px"></textarea>
                 <div class="error" id="address-error">Please enter your address with a minimum of 25 characters</div>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="text" name="email" id="email">
                 <div class="error" id="email-error">Please enter a valid email address</div>
                 <label for="subject">Subject (minimum 10 characters)</label>
                 <input type="text" name="subject" id="subject">
                 <div class="error" id="subject-error">Please enter a subject with a minimum of 10 characters</div>
             </section>
         </div>
-        <button>submit</button>
+        <button type="submit">Submit</button>
+        <button> <a href="index.html">Back to burgers</a></button>
     </form>
     <script src="/js/contact.js"></script>
 </body>

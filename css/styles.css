@@ -1,7 +1,14 @@
+body {
+  padding-bottom: 50px;
+}
+
+/* Index */
+
 .result {
   border: solid blue 1px;
   padding: 10px;
   margin: 50px 0px;
+  max-width: 1000px;
 }
 
 a {
@@ -35,6 +42,12 @@ span {
   }
 }
 
+button {
+  background-color: orange;
+  padding: 10px;
+  font-weight: bold;
+}
+
 /* Contact Form */
 
 input,
@@ -52,10 +65,13 @@ textarea {
   display: none;
 }
 
-/* .contact-form {
+.contact-form {
   text-align: left;
-  margin-top: 35px;
-} */
+  margin: 35px 0px;
+  padding: 20px;
+  max-width: 500px;
+  border: 1px solid black;
+}
 
 .contact-form > * {
   display: flex;

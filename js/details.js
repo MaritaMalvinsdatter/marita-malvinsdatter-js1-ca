@@ -1,11 +1,8 @@
-// 2. Fetch a single result using an id, name, or other property
+const newTitle = document.querySelector("title")
 
 const oneBurgerHTML = document.querySelector(".burgerresults");
-
 const queryString = document.location.search;
-
 const params = new URLSearchParams(queryString);
-
 const id = params.get("id");
 
 console.log(id);
@@ -17,6 +14,7 @@ const options = { "headers": {
 
 console.log(urlTwo);
 
+// Selected burger: 
 
 async function getOneBurger() {
 
@@ -31,13 +29,15 @@ async function getOneBurger() {
                                   <p>Description: ${json.description}</p>
                                   <p>Ingredients: ${json.ingredients}</p></div>` // need space!!!
 
+        newTitle.innerHTML += `${json.name}`;
+
     } catch (error) {
         oneBurgerHTML.innerHTML += `An error has occured, please return to main page or contact us`;
     }
 
 }
 
-getOneBurger()
+getOneBurger();
 
 
 
