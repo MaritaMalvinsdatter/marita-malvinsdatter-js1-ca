@@ -62,6 +62,6 @@ function checkLength(value, len) {
 
 function checkEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
-    const patternMatches = regEx.test(email);
-    return patternMatches;
+    const patternMatch = regEx.test(email);
+    return patternMatch;
 }
