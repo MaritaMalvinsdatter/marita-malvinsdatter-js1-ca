@@ -22,12 +22,10 @@ async function getOneBurger() {
         const response = await fetch(urlTwo, options);
         const json = await response.json();
 
-        console.log(json);
-
         oneBurgerHTML.innerHTML += `<div><h1> ${json.name}</h1>
                                   <p>You can find this tasty burger at the <a href="${json.web}" class="restaurant-link">${json.restaurant}</a> restaurant</p>
                                   <p>Description: ${json.description}</p>
-                                  <p>Ingredients: ${json.ingredients}</p></div>` // need space!!!
+                                  <p>Ingredients: ${json.ingredients.join(`, `)}</p></div>` // found the .join function to make space beteen the elements on stackoverflow:https://stackoverflow.com/questions/13939573/how-to-add-spaces-between-array-items-javascript 
 
         newTitle.innerHTML += `${json.name}`;
 

@@ -21,7 +21,6 @@ async function getBurgers() {
         resultsHTML.innerHTML = " ";
 
         for (let i =0; i< data.length; i++){
-            // let results = data[i];
             // console.log(data[i])
 
             if (i === 15) {
