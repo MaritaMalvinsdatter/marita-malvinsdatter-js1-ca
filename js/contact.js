@@ -12,6 +12,8 @@ const addressError = document.querySelector("#address-error");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subject-error");
 
+const message = document.querySelector(".validation-message")
+
 function validateForm() {
     event.preventDefault();
 
@@ -39,6 +41,13 @@ function validateForm() {
         subjectError.style.display = "inline";
     }
 
+    if (checkLength(address.value, 24) && checkLength(address.value, 24) && checkEmail(email.value) && checkLength(subject.value, 9)) {
+        message.innerHTML += `Thanks for reaching out. We will do our very best to get back to you ASAP`;
+    } else {
+        return;
+    }
+
+    contactForm.reset();
 }
 
 contactForm.addEventListener("submit", validateForm);
